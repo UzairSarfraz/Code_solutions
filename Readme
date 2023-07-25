@@ -1,0 +1,67 @@
+# Fibonacci Sequence Implementation in C
+
+This repository contains C code to implement the Fibonacci sequence using three different methods: Iterative (Loop-based), Recursive, and Memoization. These methods compute the nth term of the Fibonacci sequence based on the piecewise recurrence relation F(n) = F(n-3) + F(n-2), with initial conditions F(0) = 0, F(1) = 1, and F(2) = 2.
+
+## Development Environment
+
+The code was developed and tested using the following environment:
+
+- Operating System: (Please mention your OS version, e.g., Windows 10, macOS Big Sur, Ubuntu 20.04, etc.)
+- IDE: Visual Studio Code (VSCode) (Version x.x.x, download it from https://code.visualstudio.com/)
+- Language: C (C11 standard)
+
+## How to Compile and Run the Source Code
+
+Follow the steps below to compile and run the C code using the different methods:
+
+1. Open Visual Studio Code (VSCode) on your machine.
+
+2. Create a new C file and paste the code for the desired method (iterative, recursive, or memoization) into the file.
+
+3. Save the file with a `.c` extension, for example, `Question-1(1st method).c`, `Question-2(2nd method).c`, or `Question-3(3rd method).c`, depending on the method.
+
+4. Open the integrated terminal in VSCode by going to `View` > `Terminal`.
+
+5. Compile the C code using the appropriate command:
+
+   For the iterative method:
+   ```
+   gcc -o Question-1(1st method) Question-1(1st method).c
+   ```
+
+   For the recursive method:
+   ```
+   gcc -o Question-2(2nd method) Question-2(2nd method).c
+   ```
+
+   For the memoization method:
+   ```
+   gcc -o Question-3(3rd method) Question-3(3rd method).c
+   ```
+
+6. After successful compilation, you will see an executable file in the same directory as your C file. The file will have the same name as the C file (e.g., `Question-1(1st method).c`, `
+`Question-2(2nd method).c`, or `Question-3(3rd method).c`).
+
+7. Run the executable in the terminal to get the output:
+
+   ```
+   ./Question-1(1st method)
+   ```
+
+   ```
+   ./Question-2(2nd method)
+   ```
+
+   ```
+   ./Question-3(3rd method)
+   ```
+
+   You can replace the method name in the above commands with the appropriate method you want to run.
+
+8. The program will prompt you to enter the value of n for which you want to compute F(n). Enter a non-negative integer value for n, and the program will display the corresponding value of F(n) based on the chosen method.
+
+## Additional Information
+
+- The `Question-1(1st method).c`, `Question-2(2nd method).c`, and `Question-3(3rd method).c` files contain the respective implementations for the three methods.
+- The code assumes that the input value of n is non-negative and within the maximum range of the `long long int` data type. For very large values of n, the iterative and recursive methods may encounter integer overflow issues. In such cases, the memoization method or matrix exponentiation method (not included in this repository) would be more suitable.
+- The C code provided in this repository is for educational purposes and does not cover input validation or error handling for simplicity. In real-world scenarios, it is essential to add appropriate checks to handle potential errors or invalid inputs.
